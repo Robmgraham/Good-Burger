@@ -1,6 +1,3 @@
---  In this file, write insert queries to populate the `burgers` table with at least three entries.
-
-INSERT INTO burgers (name) VALUES ('Impossible');
-INSERT INTO burgers (name) VALUES ('Western');
-INSERT INTO burgers (name) VALUES ('Double Cheeseburger');
-
+INSERT INTO burgers (burger_name, devoured) VALUES ('Impossible', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Impossible with cheese', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Fuego jalepeno burger', FALSE);

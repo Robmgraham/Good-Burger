@@ -1,25 +1,17 @@
 {
-  "name": "good-burger",
+  "name": "node_what_todo",
   "version": "1.0.0",
-  "description": "Good Burger  is an app using MySQL, Node, Express, Handlebars and ORM. As a user selects a burger to eat it is then devoured.",
+  "description": "-Node \r -Express \r -MySQL \r -Handlebars \r -Jquery",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Robmgraham/Good-Burger.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Robmgraham/Good-Burger/issues"
-  },
-  "homepage": "https://github.com/Robmgraham/Good-Burger#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
-    "handlebars": "^4.7.6"
-  }
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {}
 }
