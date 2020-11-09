@@ -26,7 +26,7 @@
 		<div class="col-md-4 text-center" class="task">Burgers you've devoured
 			  {{#each burger_data}}
 			  	{{#if this.devoured}}
-			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly><button class="delete-cat" data-id="{{this.id}}">DELETE!</button>
+			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly><button class="delete-cat" data-id="{{this.id}}">remove</button>
 				{{/if}}
 			  {{/each}}
 		</div>
