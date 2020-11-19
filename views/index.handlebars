@@ -9,14 +9,14 @@
 			  {{#each burger_data}}
 			  	{{#unless this.devoured}}
 				<div class="col-md-9 text-center">
-					<pre>{{this.id}}. {{this.burger_name}}
+					<pre>. {{this.burger_name}}
 					</pre>
 				  		<!-- {{this.Date}} -->
 				</div>
 				<div class="col-md-3 text-center">
 					<form class="devour-form button-size">
 						<input input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-						<button type="submit" class="btn btn-default">Eat it!</button>
+						<button type="submit" class="btn btn-danger">Eat it!</button>
 					</form>
 				</div>
 				{{/unless}}
@@ -26,7 +26,7 @@
 		<div class="col-md-4 text-center" class="task">Burgers you've devoured
 			  {{#each burger_data}}
 			  	{{#if this.devoured}}
-			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly><button class="delete-cat" data-id="{{this.id}}">remove</button>
+			  		<input class="form-control" type="text" placeholder="{{this.burger_name}}" readonly><button class="delete-cat" data-id="{{this.id}}">remove</button>
 				{{/if}}
 			  {{/each}}
 		</div>
@@ -39,7 +39,7 @@
 		<div class="col-md-12 text-center enter_section">
 			<form action="/burgers/create" method="POST">
 				<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
-				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+				<button type="submit" class="btn btn-warning" id="text-enter-button">Submit</button>
 			</form>
 			<p>Enter a burger you want to add.</p>
 		</div>

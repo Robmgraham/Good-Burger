@@ -19,11 +19,11 @@ var burger = {
       devoured: true
     }, condition, cb);
   },
-  // delete: function(id, cb) {
-  //   orm.delete("burgers", [
-  //     "burger_name"
-  //   ])
-  // }
+  delete: function(id, cb) {
+    orm.delete("burgers", [
+      "burger_name"
+    ])
+  }
 };
 
 module.exports = burger;
